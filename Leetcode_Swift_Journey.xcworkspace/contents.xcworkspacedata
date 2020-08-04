@@ -2,6 +2,27 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NeedleInAHaystack.playground">
+   </FileRef>
+   <FileRef
+      location = "group:RemoveElement.playground">
+   </FileRef>
+   <FileRef
+      location = "group:RemoveDuplicatesFromSortedArray.playground">
+   </FileRef>
+   <FileRef
+      location = "group:ValidParanthesis.playground">
+   </FileRef>
+   <FileRef
+      location = "group:RomanToInteger.playground">
+   </FileRef>
+   <FileRef
+      location = "group:LongestCommonPrefix.playground">
+   </FileRef>
+   <FileRef
+      location = "group:ReverseInteger.playground">
+   </FileRef>
+   <FileRef
       location = "group:TwoSum.playground">
    </FileRef>
    <FileRef
