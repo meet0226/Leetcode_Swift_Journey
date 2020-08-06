@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Duplicates_in_Array.playground">
+   </FileRef>
+   <FileRef
       location = "group:Add_Search_Word_Data_structure.playground">
    </FileRef>
    <FileRef
