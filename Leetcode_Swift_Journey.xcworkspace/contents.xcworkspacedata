@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Pascals_Triangle_II .playground">
+   </FileRef>
+   <FileRef
       location = "group:H-Index.playground">
    </FileRef>
    <FileRef
