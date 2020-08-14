@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Longest Palindrome.playground">
+   </FileRef>
+   <FileRef
       location = "group:Iterator_for_Combination .playground">
    </FileRef>
    <FileRef
