@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Distribute_Candies_to_People.playground">
+   </FileRef>
+   <FileRef
       location = "group:/Users/amitkumar693/Desktop/My Desktop/Leetcode/Non_overlapping_Intervals.playground">
    </FileRef>
    <FileRef
