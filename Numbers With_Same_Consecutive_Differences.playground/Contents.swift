@@ -15,7 +15,6 @@ func numsSameConsecDiff(_ N: Int, _ K: Int) -> [Int] {
                     tempArray.append(number*10 + abs((number%10)-K))
                 }
             }
-            print(tempArray)
             numberArray = tempArray
         }
         output.append(contentsOf: numberArray)
