@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Binary_Tree_Level_Order_Traversal.playground">
+   </FileRef>
+   <FileRef
       location = "group:Distribute_Candies_to_People.playground">
    </FileRef>
    <FileRef
