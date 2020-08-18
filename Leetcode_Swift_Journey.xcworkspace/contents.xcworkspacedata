@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Numbers With_Same_Consecutive_Differences.playground">
+   </FileRef>
+   <FileRef
       location = "group:Binary_Tree_Level_Order_Traversal.playground">
    </FileRef>
    <FileRef
