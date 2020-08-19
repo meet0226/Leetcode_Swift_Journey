@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Goat Latin.playground">
+   </FileRef>
+   <FileRef
       location = "group:Numbers With_Same_Consecutive_Differences.playground">
    </FileRef>
    <FileRef
