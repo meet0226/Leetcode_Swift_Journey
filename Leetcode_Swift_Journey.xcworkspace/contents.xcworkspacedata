@@ -1,76 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:Goat Latin.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Numbers With_Same_Consecutive_Differences.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Binary_Tree_Level_Order_Traversal.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Distribute_Candies_to_People.playground">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/amitkumar693/Desktop/My Desktop/Leetcode/Non_overlapping_Intervals.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Longest Palindrome.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Iterator_for_Combination .playground">
-   </FileRef>
-   <FileRef
-      location = "group:Pascals_Triangle_II .playground">
-   </FileRef>
-   <FileRef
-      location = "group:H-Index.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Excel_Sheet_Column_Number.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Rotting Oranges.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Duplicates_in_Array.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Add_Search_Word_Data_structure.playground">
-   </FileRef>
+   <Group
+      location = "container:"
+      name = "Easy">
+      <FileRef
+         location = "group:Power_of_4.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Palindrome.playground">
+      </FileRef>
+      <FileRef
+         location = "group:TwoSum.playground">
+      </FileRef>
+      <FileRef
+         location = "group:ReverseInteger.playground">
+      </FileRef>
+      <FileRef
+         location = "group:LongestCommonPrefix.playground">
+      </FileRef>
+      <FileRef
+         location = "group:RomanToInteger.playground">
+      </FileRef>
+      <FileRef
+         location = "group:RemoveElement.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Distribute_Candies_to_People.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Goat Latin.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Longest Palindrome.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Pascals_Triangle_II .playground">
+      </FileRef>
+      <FileRef
+         location = "group:Excel_Sheet_Column_Number.playground">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Medium">
+      <FileRef
+         location = "group:Numbers With_Same_Consecutive_Differences.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Binary_Tree_Level_Order_Traversal.playground">
+      </FileRef>
+      <FileRef
+         location = "group:/Users/amitkumar693/Desktop/My Desktop/Leetcode/Non_overlapping_Intervals.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Iterator_for_Combination .playground">
+      </FileRef>
+      <FileRef
+         location = "group:H-Index.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Rotting Oranges.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Duplicates_in_Array.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Add_Search_Word_Data_structure.playground">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Hard">
+      <FileRef
+         location = "group:Median_of_Two_Sorted_Arrays.playground">
+      </FileRef>
+      <FileRef
+         location = "group:ValidParanthesis.playground">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:NeedleInAHaystack.playground">
    </FileRef>
    <FileRef
-      location = "group:RemoveElement.playground">
-   </FileRef>
-   <FileRef
       location = "group:RemoveDuplicatesFromSortedArray.playground">
-   </FileRef>
-   <FileRef
-      location = "group:ValidParanthesis.playground">
-   </FileRef>
-   <FileRef
-      location = "group:RomanToInteger.playground">
-   </FileRef>
-   <FileRef
-      location = "group:LongestCommonPrefix.playground">
-   </FileRef>
-   <FileRef
-      location = "group:ReverseInteger.playground">
-   </FileRef>
-   <FileRef
-      location = "group:TwoSum.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Median_of_Two_Sorted_Arrays.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Palindrome.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Power_of_4.playground">
    </FileRef>
 </Workspace>
