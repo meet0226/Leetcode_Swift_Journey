@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:Reorder_List.playground">
-   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
@@ -47,6 +44,9 @@
    <Group
       location = "container:"
       name = "Medium">
+      <FileRef
+         location = "group:Reorder_List.playground">
+      </FileRef>
       <FileRef
          location = "group:Numbers With_Same_Consecutive_Differences.playground">
       </FileRef>
