@@ -5,6 +5,9 @@
       location = "container:"
       name = "Easy">
       <FileRef
+         location = "group:Sum_of_Left_Leaves.playground">
+      </FileRef>
+      <FileRef
          location = "group:Sort_Array_By_Parity.playground">
       </FileRef>
       <FileRef
