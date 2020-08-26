@@ -51,6 +51,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Minimum_Cost_For_Tickets.playground">
+      </FileRef>
+      <FileRef
          location = "group:Reorder_List.playground">
       </FileRef>
       <FileRef
