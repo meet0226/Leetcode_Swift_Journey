@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <FileRef
+      location = "group:Find_Right_Interval.playground">
+   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
+      <FileRef
+         location = "group:Fizz_Buzz.playground">
+      </FileRef>
       <FileRef
          location = "group:Sum_of_Left_Leaves.playground">
       </FileRef>
