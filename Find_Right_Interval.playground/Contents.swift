@@ -19,7 +19,7 @@ func findRightInterval(_ intervals: [[Int]]) -> [Int] {
     return output
 }
 
-print(findRightInterval([[1,4], [2,3], [3,4] ]))
-print(findRightInterval([[3,4], [2,3], [1,2] ]))
-print(findRightInterval([ [1,2] ]))
-print(findRightInterval([[1,2],[2,3],[0,1],[3,4]]))
+//print(findRightInterval([[1,4], [2,3], [3,4] ]))
+//print(findRightInterval([[3,4], [2,3], [1,2] ]))
+//print(findRightInterval([ [1,2] ]))
+//print(findRightInterval([[1,2],[2,3],[0,1],[3,4]]))

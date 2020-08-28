@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Find_Right_Interval.playground">
+      location = "group:/Users/amitkumar693/Library/Autosave Information/Implement_Rand10_Using_Rand7.playground">
    </FileRef>
    <Group
       location = "container:"
@@ -56,6 +56,12 @@
    <Group
       location = "container:"
       name = "Medium">
+      <FileRef
+         location = "group:Implement_Rand10_Using_Rand7.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Find_Right_Interval.playground">
+      </FileRef>
       <FileRef
          location = "group:Minimum_Cost_For_Tickets.playground">
       </FileRef>
