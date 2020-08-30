@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:/Users/amitkumar693/Library/Autosave Information/Implement_Rand10_Using_Rand7.playground">
-   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
@@ -56,6 +53,9 @@
    <Group
       location = "container:"
       name = "Medium">
+      <FileRef
+         location = "group:Pancake_Sorting.playground">
+      </FileRef>
       <FileRef
          location = "group:Implement_Rand10_Using_Rand7.playground">
       </FileRef>
