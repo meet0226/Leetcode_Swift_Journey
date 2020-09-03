@@ -5,6 +5,9 @@
       location = "container:"
       name = "Easy">
       <FileRef
+         location = "group:Rotate_Array.playground">
+      </FileRef>
+      <FileRef
          location = "group:Repeated_Substring_Pattern.playground">
       </FileRef>
       <FileRef
