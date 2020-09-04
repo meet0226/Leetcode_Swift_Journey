@@ -60,6 +60,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Partition_Labels.playground">
+      </FileRef>
+      <FileRef
          location = "group:Contains_Duplicate_III.playground">
       </FileRef>
       <FileRef
