@@ -60,6 +60,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:All_Elements_in_Two_Binary_Search_Trees.playground">
+      </FileRef>
+      <FileRef
          location = "group:Partition_Labels.playground">
       </FileRef>
       <FileRef
