@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:Word_Pattern.playground">
-   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
+      <FileRef
+         location = "group:Sum_of_Root_To_Leaf_Binary_Numbers.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Word_Pattern.playground">
+      </FileRef>
       <FileRef
          location = "group:Rotate_Array.playground">
       </FileRef>
