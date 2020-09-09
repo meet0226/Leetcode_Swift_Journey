@@ -5,6 +5,9 @@
       location = "container:"
       name = "Easy">
       <FileRef
+         location = "group:Non-decreasing_Array.playground">
+      </FileRef>
+      <FileRef
          location = "group:Sum_of_Root_To_Leaf_Binary_Numbers.playground">
       </FileRef>
       <FileRef
