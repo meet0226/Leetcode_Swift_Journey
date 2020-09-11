@@ -72,6 +72,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Maximum_Product_Subarray.playground">
+      </FileRef>
+      <FileRef
          location = "group:Validate_Binary_Search_Tree.playground">
       </FileRef>
       <FileRef
