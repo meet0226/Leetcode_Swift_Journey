@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:Bulls_And_Cows.playground">
-   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
+      <FileRef
+         location = "group:Bulls_And_Cows.playground">
+      </FileRef>
       <FileRef
          location = "group:Non-decreasing_Array.playground">
       </FileRef>
@@ -71,6 +71,9 @@
    <Group
       location = "container:"
       name = "Medium">
+      <FileRef
+         location = "group:Validate_Binary_Search_Tree.playground">
+      </FileRef>
       <FileRef
          location = "group:Compare_Version_Numbers.playground">
       </FileRef>
