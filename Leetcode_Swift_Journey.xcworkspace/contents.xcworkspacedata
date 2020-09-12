@@ -72,6 +72,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Reverse_Words_in_a_String.playground">
+      </FileRef>
+      <FileRef
          location = "group:Maximum_Product_Subarray.playground">
       </FileRef>
       <FileRef
