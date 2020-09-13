@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:Insert_Interval.playground">
-   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
@@ -138,6 +135,9 @@
    <Group
       location = "container:"
       name = "Hard">
+      <FileRef
+         location = "group:Insert_Interval.playground">
+      </FileRef>
       <FileRef
          location = "group:Median_of_Two_Sorted_Arrays.playground">
       </FileRef>
