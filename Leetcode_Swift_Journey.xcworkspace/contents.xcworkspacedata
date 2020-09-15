@@ -5,6 +5,9 @@
       location = "container:"
       name = "Easy">
       <FileRef
+         location = "group:Length_of_Last_Word.playground">
+      </FileRef>
+      <FileRef
          location = "group:House_Robber.playground">
       </FileRef>
       <FileRef
