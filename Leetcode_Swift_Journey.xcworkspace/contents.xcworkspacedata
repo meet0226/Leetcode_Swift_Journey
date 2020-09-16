@@ -78,6 +78,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Decoded_String_at_Index.playground">
+      </FileRef>
+      <FileRef
          location = "group:Reverse_Words_in_a_String.playground">
       </FileRef>
       <FileRef
