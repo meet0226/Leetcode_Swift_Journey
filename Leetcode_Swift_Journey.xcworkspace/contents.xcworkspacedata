@@ -81,6 +81,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Car_Pooling.playground">
+      </FileRef>
+      <FileRef
          location = "group:Sequential_Digits.playground">
       </FileRef>
       <FileRef
