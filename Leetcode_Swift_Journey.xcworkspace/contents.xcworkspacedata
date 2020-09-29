@@ -84,6 +84,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Subarray_Product_Less_Than_K.playground">
+      </FileRef>
+      <FileRef
          location = "group:Teemo_Attacking.playground">
       </FileRef>
       <FileRef
