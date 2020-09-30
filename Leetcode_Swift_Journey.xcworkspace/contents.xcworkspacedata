@@ -175,6 +175,9 @@
       location = "container:"
       name = "Hard">
       <FileRef
+         location = "group:First_Missing_Positive.playground">
+      </FileRef>
+      <FileRef
          location = "group:Insert_Interval.playground">
       </FileRef>
       <FileRef
