@@ -5,6 +5,9 @@
       location = "container:"
       name = "Easy">
       <FileRef
+         location = "group:Number_of_Recent_Calls.playground">
+      </FileRef>
+      <FileRef
          location = "group:Find_the_Difference.playground">
       </FileRef>
       <FileRef
