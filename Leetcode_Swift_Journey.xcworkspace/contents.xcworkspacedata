@@ -87,6 +87,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:K-diff_Pairs_in_an_Array.playground">
+      </FileRef>
+      <FileRef
          location = "group:Permutations.playground">
       </FileRef>
       <FileRef
