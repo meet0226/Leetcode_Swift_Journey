@@ -87,6 +87,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Permutations.playground">
+      </FileRef>
+      <FileRef
          location = "group:Combination_Sum.playground">
       </FileRef>
       <FileRef
