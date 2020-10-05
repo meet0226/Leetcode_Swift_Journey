@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:Remove_Covered_Intervals.playground">
-   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
+      <FileRef
+         location = "group:Complement_of_Base_10_Integer.playground">
+      </FileRef>
       <FileRef
          location = "group:Number_of_Recent_Calls.playground">
       </FileRef>
@@ -89,6 +89,9 @@
    <Group
       location = "container:"
       name = "Medium">
+      <FileRef
+         location = "group:Remove_Covered_Intervals.playground">
+      </FileRef>
       <FileRef
          location = "group:Merge_Intervals.playground">
       </FileRef>
