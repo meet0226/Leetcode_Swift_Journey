@@ -90,6 +90,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Even_Odd_Tree.playground">
+      </FileRef>
+      <FileRef
          location = "group:Remove_Covered_Intervals.playground">
       </FileRef>
       <FileRef
