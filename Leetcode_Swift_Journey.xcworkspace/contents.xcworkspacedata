@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:Insert_into_a_Binary_Search_Tree.playground">
-   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
@@ -92,6 +89,12 @@
    <Group
       location = "container:"
       name = "Medium">
+      <FileRef
+         location = "group:Vertical_Order_Traversal_Binary_Tree.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Insert_into_a_Binary_Search_Tree.playground">
+      </FileRef>
       <FileRef
          location = "group:Even_Odd_Tree.playground">
       </FileRef>
