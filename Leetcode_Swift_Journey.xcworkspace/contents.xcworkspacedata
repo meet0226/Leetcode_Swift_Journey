@@ -90,6 +90,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Rotate_List.playground">
+      </FileRef>
+      <FileRef
          location = "group:Vertical_Order_Traversal_Binary_Tree.playground">
       </FileRef>
       <FileRef
