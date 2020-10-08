@@ -5,6 +5,9 @@
       location = "container:"
       name = "Easy">
       <FileRef
+         location = "group:Binary_Search.playground">
+      </FileRef>
+      <FileRef
          location = "group:Complement_of_Base_10_Integer.playground">
       </FileRef>
       <FileRef
