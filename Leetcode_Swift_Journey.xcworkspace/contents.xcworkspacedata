@@ -93,6 +93,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Add_Two_Numbers.playground">
+      </FileRef>
+      <FileRef
          location = "group:Rotate_List.playground">
       </FileRef>
       <FileRef
