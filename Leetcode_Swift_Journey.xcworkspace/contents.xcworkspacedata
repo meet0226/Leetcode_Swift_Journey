@@ -93,6 +93,12 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Minimum_Number_of_Arrows_to_Burst_Balloons.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Serialize_and_Deserialize_BST.playground">
+      </FileRef>
+      <FileRef
          location = "group:Add_Two_Numbers.playground">
       </FileRef>
       <FileRef
