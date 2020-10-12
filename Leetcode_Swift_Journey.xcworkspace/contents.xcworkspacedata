@@ -93,6 +93,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Longest Substring_Without_Repeating_Characters.playground">
+      </FileRef>
+      <FileRef
          location = "group:Buddy_Strings.playground">
       </FileRef>
       <FileRef
