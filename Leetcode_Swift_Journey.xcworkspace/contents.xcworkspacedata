@@ -5,6 +5,9 @@
       location = "container:"
       name = "Easy">
       <FileRef
+         location = "group:Middle_of_the_Linked_List.playground">
+      </FileRef>
+      <FileRef
          location = "group:Binary_Search.playground">
       </FileRef>
       <FileRef
@@ -92,6 +95,9 @@
    <Group
       location = "container:"
       name = "Medium">
+      <FileRef
+         location = "group:Sort_List.playground">
+      </FileRef>
       <FileRef
          location = "group:Longest Substring_Without_Repeating_Characters.playground">
       </FileRef>
