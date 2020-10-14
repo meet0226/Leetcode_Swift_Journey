@@ -96,6 +96,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:House_Robber_II.playground">
+      </FileRef>
+      <FileRef
          location = "group:Sort_List.playground">
       </FileRef>
       <FileRef
