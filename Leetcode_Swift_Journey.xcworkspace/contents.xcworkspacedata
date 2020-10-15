@@ -5,6 +5,9 @@
       location = "container:"
       name = "Easy">
       <FileRef
+         location = "group:Merge_Two_Sorted_List.playground">
+      </FileRef>
+      <FileRef
          location = "group:/Users/amitkumar693/Desktop/My Desktop/Leetcode/Reverse_Linked_List.playground">
       </FileRef>
       <FileRef
