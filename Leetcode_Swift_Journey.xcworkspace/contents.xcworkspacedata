@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:Search_a_2D_Matrix.playground">
-   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
@@ -104,6 +101,9 @@
    <Group
       location = "container:"
       name = "Medium">
+      <FileRef
+         location = "group:Search_a_2D_Matrix.playground">
+      </FileRef>
       <FileRef
          location = "group:House_Robber_II.playground">
       </FileRef>
@@ -243,6 +243,9 @@
    <Group
       location = "container:"
       name = "Hard">
+      <FileRef
+         location = "group:Merge_k_Sorted_Lists.playground">
+      </FileRef>
       <FileRef
          location = "group:First_Missing_Positive.playground">
       </FileRef>
