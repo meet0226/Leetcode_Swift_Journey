@@ -95,6 +95,9 @@
          location = "group:Pascals_Triangle_II .playground">
       </FileRef>
       <FileRef
+         location = "group:/Users/amitkumar693/Desktop/My Desktop/Leetcode/Remove_Duplicates_From_Sorted_Array.playground">
+      </FileRef>
+      <FileRef
          location = "group:Excel_Sheet_Column_Number.playground">
       </FileRef>
    </Group>
@@ -237,6 +240,9 @@
          location = "group:Duplicates_in_Array.playground">
       </FileRef>
       <FileRef
+         location = "group:Insert_Interval.playground">
+      </FileRef>
+      <FileRef
          location = "group:Add_Search_Word_Data_structure.playground">
       </FileRef>
    </Group>
@@ -250,9 +256,6 @@
          location = "group:First_Missing_Positive.playground">
       </FileRef>
       <FileRef
-         location = "group:Insert_Interval.playground">
-      </FileRef>
-      <FileRef
          location = "group:Median_of_Two_Sorted_Arrays.playground">
       </FileRef>
       <FileRef
@@ -261,8 +264,5 @@
    </Group>
    <FileRef
       location = "group:NeedleInAHaystack.playground">
-   </FileRef>
-   <FileRef
-      location = "group:RemoveDuplicatesFromSortedArray.playground">
    </FileRef>
 </Workspace>
