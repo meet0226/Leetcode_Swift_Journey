@@ -13,12 +13,11 @@ func rotate(_ nums: inout [Int], _ k: Int) {
 }
 
 func rotate2(_ nums: inout [Int], _ k: Int) {
-    var k = k % nums.count
-    if nums.count > k {
-        nums = Array(nums[(nums.count - k)..<nums.count]) + Array(nums[0..<(nums.count - k)])
-    } else {
-        rotate(&nums, k - 1)
+    var k = k
+    while nums.count <= k {
+        k = k % nums.count
     }
+    nums = Array(nums[(nums.count - k)...]) + Array(nums[..<(nums.count - k)])
 }
 
 var array1 = [1,2,3,4,5,6,7]
