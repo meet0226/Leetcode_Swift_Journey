@@ -105,6 +105,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Repeated_DNA_Sequences.playground">
+      </FileRef>
+      <FileRef
          location = "group:Search_a_2D_Matrix.playground">
       </FileRef>
       <FileRef
