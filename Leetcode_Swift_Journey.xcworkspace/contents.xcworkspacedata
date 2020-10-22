@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:Minimum_Depth_of_Binary_Tree.playground">
-   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
+      <FileRef
+         location = "group:Minimum_Depth_of_Binary_Tree.playground">
+      </FileRef>
       <FileRef
          location = "group:Merge_Two_Sorted_List.playground">
       </FileRef>
@@ -107,6 +107,9 @@
    <Group
       location = "container:"
       name = "Medium">
+      <FileRef
+         location = "group:Combination_Sum_II.playground">
+      </FileRef>
       <FileRef
          location = "group:Asteroid_Collision.playground">
       </FileRef>
