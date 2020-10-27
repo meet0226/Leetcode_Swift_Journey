@@ -108,6 +108,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Champagne_Tower.playground">
+      </FileRef>
+      <FileRef
          location = "group:Bag_of_Tokens.playground">
       </FileRef>
       <FileRef
