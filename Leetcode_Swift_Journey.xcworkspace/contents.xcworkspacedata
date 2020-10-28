@@ -108,6 +108,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Linked_List_Cycle_II.playground">
+      </FileRef>
+      <FileRef
          location = "group:Champagne_Tower.playground">
       </FileRef>
       <FileRef
