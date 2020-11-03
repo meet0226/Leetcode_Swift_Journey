@@ -114,6 +114,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Insertion_Sort_List.playground">
+      </FileRef>
+      <FileRef
          location = "group:Maximize_Distance_to_Closest_Person.playground">
       </FileRef>
       <FileRef
