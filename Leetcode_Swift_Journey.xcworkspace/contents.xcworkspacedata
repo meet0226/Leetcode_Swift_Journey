@@ -5,6 +5,9 @@
       location = "container:"
       name = "Easy">
       <FileRef
+         location = "group:Consecutive_Characters.playground">
+      </FileRef>
+      <FileRef
          location = "group:Convert Binary_Number_in_a_Linked_List_to_Integer.playground">
       </FileRef>
       <FileRef
