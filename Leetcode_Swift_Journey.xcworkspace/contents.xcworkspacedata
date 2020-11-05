@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <FileRef
+      location = "group:Minimum_Cost_to_Move_Chips_to_The_Same_Position.playground">
+   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
