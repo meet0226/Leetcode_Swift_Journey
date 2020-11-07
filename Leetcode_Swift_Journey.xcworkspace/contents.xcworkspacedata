@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:Add_Two_Numbers_II.playground">
-   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
@@ -122,6 +119,9 @@
    <Group
       location = "container:"
       name = "Medium">
+      <FileRef
+         location = "group:Add_Two_Numbers_II.playground">
+      </FileRef>
       <FileRef
          location = "group:Find_the_Smallest_Divisor_Given_a_Threshold.playground">
       </FileRef>

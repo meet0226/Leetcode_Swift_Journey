@@ -88,10 +88,10 @@ func calculateAdditionAndCarry(_ firstValue: Int, _ secondValue: Int, carry: ino
     return (addition%10)
 }
 
-//let l1 = createList(data: [7,2,4,3])
-//let l2 = createList(data: [5,6,4])
-//
-//getNodeValue(root: addTwoNumbers(l1, l2))
+let l1 = createList(data: [7,2,4,3])
+let l2 = createList(data: [5,6,4])
+
+getNodeValue(root: addTwoNumbers(l1, l2))
 
 let l3 = createList(data: [9,8,9,3])
 let l4 = createList(data: [5,6,4])
