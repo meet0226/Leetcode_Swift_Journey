@@ -1,10 +1,15 @@
 import UIKit
 
+//func minCostToMoveChips(_ position: [Int]) -> Int {
+//    guard Set(position).count > 1 else { return 0 }
+//    let evenPosition = position.filter { $0 % 2 == 0 }.count
+//    let oddPosition = position.count - evenPosition
+//    return min(oddPosition, evenPosition)
+//}
+
 func minCostToMoveChips(_ position: [Int]) -> Int {
-    guard Set(position).count > 1 else { return 0 }
-    let evenPosition = position.filter { $0 % 2 == 0 }.count
-    let oddPosition = position.count - evenPosition
-    return min(oddPosition, evenPosition)
+    let evenPosition = position.reduce(0, { $0 + ($1 % 2 == 0 ? 1 : 0) })
+    return min((position.count - evenPosition), evenPosition)
 }
 
 print(minCostToMoveChips([1,2,3]))

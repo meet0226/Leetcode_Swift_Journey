@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:Minimum_Cost_to_Move_Chips_to_The_Same_Position.playground">
-   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
+      <FileRef
+         location = "group:Minimum_Cost_to_Move_Chips_to_The_Same_Position.playground">
+      </FileRef>
       <FileRef
          location = "group:Consecutive_Characters.playground">
       </FileRef>
@@ -119,6 +119,9 @@
    <Group
       location = "container:"
       name = "Medium">
+      <FileRef
+         location = "group:Find_the_Smallest_Divisor_Given_a_Threshold.playground">
+      </FileRef>
       <FileRef
          location = "group:Insertion_Sort_List.playground">
       </FileRef>
