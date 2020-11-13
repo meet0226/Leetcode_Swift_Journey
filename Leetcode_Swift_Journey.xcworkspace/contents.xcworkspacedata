@@ -123,6 +123,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Permutations_II.playground">
+      </FileRef>
+      <FileRef
          location = "group:Maximum_Difference_Between_Node_and_Ancestor.playground">
       </FileRef>
       <FileRef
