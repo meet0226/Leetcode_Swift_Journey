@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:Populating_Next_Right_Pointers_in_Each_Node.playground">
-   </FileRef>
    <Group
       location = "container:"
       name = "Easy">
+      <FileRef
+         location = "group:Range_Sum_of_BST.playground">
+      </FileRef>
       <FileRef
          location = "group:Binary_Tree_Tilt.playground">
       </FileRef>
@@ -125,6 +125,9 @@
    <Group
       location = "container:"
       name = "Medium">
+      <FileRef
+         location = "group:Populating_Next_Right_Pointers_in_Each_Node.playground">
+      </FileRef>
       <FileRef
          location = "group:Permutations_II.playground">
       </FileRef>
