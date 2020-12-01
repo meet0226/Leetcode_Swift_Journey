@@ -4,8 +4,8 @@ public class TreeNode {
     public var val: Int
     public var left: TreeNode?
     public var right: TreeNode?
-    public init() { self.val = 0; self.left = nil; self.right = nil; }
-    public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }
+    public init() { val = 0; left = nil; right = nil }
+    public init(_ val: Int) { self.val = val; left = nil; right = nil }
     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {
         self.val = val
         self.left = left
@@ -24,10 +24,11 @@ func createTreeNode(data: [Int?]) -> TreeNode? {
     }
     while index < data.count {
         var newNodeArray = [TreeNode]()
-        for i in 0..<nodeArray.count {
+        for i in 0 ..< nodeArray.count {
             let node = nodeArray[i]
             if index < data.count,
-               let value = data[index] {
+               let value = data[index]
+            {
                 let newNode = TreeNode(value)
                 node.left = newNode
                 newNodeArray.append(newNode)
@@ -48,7 +49,7 @@ func createTreeNode(data: [Int?]) -> TreeNode? {
 func getData(root: TreeNode?) {
     if root != nil {
         getData(root: root?.left)
-        //print(root?.val)
+        // print(root?.val)
         getData(root: root?.right)
         print(root?.val)
     }
@@ -71,7 +72,6 @@ func calculateDifference(_ node: TreeNode?, _ currentMax: Int, _ currentMin: Int
     calculateDifference(node.right, currentMax, currentMin, &result)
 }
 
-let root = createTreeNode(data: [8,3,10,1,6,nil,14,nil,nil,4,7,13])
+let root = createTreeNode(data: [8, 3, 10, 1, 6, nil, 14, nil, nil, 4, 7, 13])
 getData(root: root)
 print(maxAncestorDiff(root))
-

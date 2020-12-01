@@ -3,7 +3,7 @@ import UIKit
 func toGoatLatin(_ S: String) -> String {
     let stringArray = S.split(separator: " ")
     var outputString = ""
-    let vowels = ["a","e","i","o","u"]
+    let vowels = ["a", "e", "i", "o", "u"]
     var suffix = "maa"
     for var singleString in stringArray {
         if let firstChar = singleString.first, !vowels.contains(String(firstChar.lowercased())) {

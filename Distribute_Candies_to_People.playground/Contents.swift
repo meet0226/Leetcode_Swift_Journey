@@ -4,7 +4,7 @@ func distributeCandies(_ candies: Int, _ num_people: Int) -> [Int] {
     var output = [Int](repeating: 0, count: num_people)
     var remainingCandies = candies
     var repeatCount = 0
-    for j in 1...candies {
+    for j in 1 ... candies {
         if j > num_people {
             remainingCandies -= j
             if remainingCandies > 0 {
@@ -22,7 +22,7 @@ func distributeCandies(_ candies: Int, _ num_people: Int) -> [Int] {
                 return output
             }
         }
-        repeatCount = j/num_people
+        repeatCount = j / num_people
     }
     return output
 }

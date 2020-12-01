@@ -7,9 +7,9 @@ public class Node {
     public var next: Node?
     public init(_ val: Int) {
         self.val = val
-        self.left = nil
-        self.right = nil
-        self.next = nil
+        left = nil
+        right = nil
+        next = nil
     }
 }
 
@@ -24,10 +24,11 @@ func createTreeNode(data: [Int?]) -> Node? {
     }
     while index < data.count {
         var newNodeArray = [Node]()
-        for i in 0..<nodeArray.count {
+        for i in 0 ..< nodeArray.count {
             let node = nodeArray[i]
             if index < data.count,
-               let value = data[index] {
+               let value = data[index]
+            {
                 let newNode = Node(value)
                 node.left = newNode
                 newNodeArray.append(newNode)
@@ -79,5 +80,5 @@ func connect(_ root: Node?) -> Node? {
     return nil
 }
 
-let root = createTreeNode(data: [1,2,3,4,5,6,7])
+let root = createTreeNode(data: [1, 2, 3, 4, 5, 6, 7])
 let connectedNode = connect(root)

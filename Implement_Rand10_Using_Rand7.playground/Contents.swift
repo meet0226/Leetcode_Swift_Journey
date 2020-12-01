@@ -1,6 +1,6 @@
 
 func rand7() -> Int {
-    return Int.random(in: 0...7)
+    return Int.random(in: 0 ... 7)
 }
 
 func rand10() -> Int {

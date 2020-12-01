@@ -3,9 +3,9 @@ import UIKit
 public class ListNode {
     public var val: Int
     public var next: ListNode?
-    public init() { self.val = 0; self.next = nil; }
-    public init(_ val: Int) { self.val = val; self.next = nil; }
-    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
+    public init() { val = 0; next = nil }
+    public init(_ val: Int) { self.val = val; next = nil }
+    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next }
 }
 
 func createList(data: [Int]) -> ListNode? {
@@ -51,12 +51,12 @@ func sortList(_ head: ListNode?) -> ListNode? {
     return outputNode
 }
 
-let rootNode = createList(data: [4,2,1,3])
+let rootNode = createList(data: [4, 2, 1, 3])
 getNodeValue(root: rootNode)
 let outputNode = sortList(rootNode)
 getNodeValue(root: outputNode)
 
-let rootNode1 = createList(data: [-1,5,3,4,0])
+let rootNode1 = createList(data: [-1, 5, 3, 4, 0])
 getNodeValue(root: rootNode1)
 let outputNode1 = sortList(rootNode1)
 getNodeValue(root: outputNode1)

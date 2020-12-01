@@ -23,15 +23,15 @@ func summaryRanges(_ nums: [Int]) -> [String] {
             if rangeStart == (rangeEnd - 1) {
                 output.append("\(rangeStart)")
             } else {
-                output.append("\(rangeStart)->\(rangeEnd-1)")
+                output.append("\(rangeStart)->\(rangeEnd - 1)")
             }
             rangeStart = nums[index]
-            rangeEnd  = nums[index]
+            rangeEnd = nums[index]
         }
     }
     return output
 }
 
-print(summaryRanges([0,1,2,4,5,7]))
-print(summaryRanges([0,1,2,4,5,6,7]))
-print(summaryRanges([0,1,2,3,4,5,6,7]))
+print(summaryRanges([0, 1, 2, 4, 5, 7]))
+print(summaryRanges([0, 1, 2, 4, 5, 6, 7]))
+print(summaryRanges([0, 1, 2, 3, 4, 5, 6, 7]))

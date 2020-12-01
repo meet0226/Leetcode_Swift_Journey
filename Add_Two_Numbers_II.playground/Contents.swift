@@ -3,9 +3,9 @@ import UIKit
 public class ListNode {
     public var val: Int
     public var next: ListNode?
-    public init() { self.val = 0; self.next = nil; }
-    public init(_ val: Int) { self.val = val; self.next = nil; }
-    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
+    public init() { val = 0; next = nil }
+    public init(_ val: Int) { self.val = val; next = nil }
+    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next }
 }
 
 func createList(data: [Int]) -> ListNode? {
@@ -57,7 +57,7 @@ func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     var sum = [Int]()
     var carry = 0
 
-    for i in 0..<max(l1Value.count, l2Value.count) {
+    for i in 0 ..< max(l1Value.count, l2Value.count) {
         let addition = calculateAdditionAndCarry(i < l1Value.count ? l1Value[i] : 0,
                                                  i < l2Value.count ? l2Value[i] : 0,
                                                  carry: &carry)
@@ -81,19 +81,18 @@ func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     return outputNode
 }
 
-
-func calculateAdditionAndCarry(_ firstValue: Int, _ secondValue: Int, carry: inout  Int) -> Int {
+func calculateAdditionAndCarry(_ firstValue: Int, _ secondValue: Int, carry: inout Int) -> Int {
     let addition = firstValue + secondValue + carry
-    carry = addition/10
-    return (addition%10)
+    carry = addition / 10
+    return (addition % 10)
 }
 
-let l1 = createList(data: [7,2,4,3])
-let l2 = createList(data: [5,6,4])
+let l1 = createList(data: [7, 2, 4, 3])
+let l2 = createList(data: [5, 6, 4])
 
 getNodeValue(root: addTwoNumbers(l1, l2))
 
-let l3 = createList(data: [9,8,9,3])
-let l4 = createList(data: [5,6,4])
+let l3 = createList(data: [9, 8, 9, 3])
+let l4 = createList(data: [5, 6, 4])
 
 getNodeValue(root: addTwoNumbers(l3, l4))

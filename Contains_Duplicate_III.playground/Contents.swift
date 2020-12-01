@@ -8,7 +8,7 @@ func containsNearbyAlmostDuplicate(_ nums: [Int], _ k: Int, _ t: Int) -> Bool {
     for i in 0 ..< nums.count {
         for j in (i + 1) ..< nums.count {
             if (nums[indexes[j]] - nums[indexes[i]]) > t {
-                 break
+                break
             }
             if abs(indexes[j] - indexes[i]) <= k {
                 return true
@@ -18,9 +18,7 @@ func containsNearbyAlmostDuplicate(_ nums: [Int], _ k: Int, _ t: Int) -> Bool {
     return false
 }
 
-print(containsNearbyAlmostDuplicate([1,2,3,1], 3, 0))
-print(containsNearbyAlmostDuplicate([1,0,1,1], 1, 2))
-print(containsNearbyAlmostDuplicate([1,5,9,1,5,9], 2, 3))
-print(containsNearbyAlmostDuplicate([2,2], 3, 0))
-
-
+print(containsNearbyAlmostDuplicate([1, 2, 3, 1], 3, 0))
+print(containsNearbyAlmostDuplicate([1, 0, 1, 1], 1, 2))
+print(containsNearbyAlmostDuplicate([1, 5, 9, 1, 5, 9], 2, 3))
+print(containsNearbyAlmostDuplicate([2, 2], 3, 0))

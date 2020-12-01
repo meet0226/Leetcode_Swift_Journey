@@ -15,12 +15,12 @@ func sequentialDigits(_ low: Int, _ high: Int) -> [Int] {
 
     for number in startNumbers {
         var temp = number
-        if (low...high).contains(temp) {
+        if (low ... high).contains(temp) {
             output.append(temp)
         }
         var tempString = String(temp)
         var stringNumberToBeAdded = ""
-        for _ in 0..<tempString.count {
+        for _ in 0 ..< tempString.count {
             stringNumberToBeAdded.append("1")
         }
         let numberToBeAdded = Int(stringNumberToBeAdded)!
@@ -32,7 +32,7 @@ func sequentialDigits(_ low: Int, _ high: Int) -> [Int] {
             if temp > high {
                 break
             }
-            if (low...high).contains(temp) {
+            if (low ... high).contains(temp) {
                 output.append(temp)
             }
             tempString = String(temp)
@@ -42,6 +42,5 @@ func sequentialDigits(_ low: Int, _ high: Int) -> [Int] {
     return output
 }
 
-
-print(sequentialDigits(1, 90000000000000000))
-//print(sequentialDigits(58, 155))
+print(sequentialDigits(1, 90_000_000_000_000_000))
+// print(sequentialDigits(58, 155))

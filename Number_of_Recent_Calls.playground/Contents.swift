@@ -9,7 +9,7 @@ class RecentCounter {
     func ping(_ t: Int) -> Int {
         slideWindow.append(t)
         while !slideWindow.isEmpty {
-            if (slideWindow.first! < (t - 3000)) {
+            if slideWindow.first! < (t - 3000) {
                 slideWindow.removeFirst()
             } else {
                 break
@@ -18,7 +18,6 @@ class RecentCounter {
         return slideWindow.count
     }
 }
-
 
 let recent = RecentCounter()
 print(recent.ping(1))

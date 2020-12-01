@@ -14,9 +14,9 @@ func maxProduct(_ nums: [Int]) -> Int {
     return result
 }
 
-print(maxProduct([2,3,-2,4]))
-print(maxProduct([-2,0,-1]))
-print(maxProduct([-2,1,-3]))
-print(maxProduct([2,3,-1,4,5,-2,1,6,-3]))
-print(maxProduct([2,3,0,4,5,-2,1,6,-3]))
-print(maxProduct([2,3,0,1,2]))
+print(maxProduct([2, 3, -2, 4]))
+print(maxProduct([-2, 0, -1]))
+print(maxProduct([-2, 1, -3]))
+print(maxProduct([2, 3, -1, 4, 5, -2, 1, 6, -3]))
+print(maxProduct([2, 3, 0, 4, 5, -2, 1, 6, -3]))
+print(maxProduct([2, 3, 0, 1, 2]))

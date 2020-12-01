@@ -3,7 +3,7 @@ func mincostTickets(_ days: [Int], _ costs: [Int]) -> Int {
     guard !days.isEmpty, !costs.isEmpty, let lastDay = days.last else { return 0 }
 
     var eachDayPriceArray = Array(repeating: 0, count: lastDay + 1)
-    for i in 1..<eachDayPriceArray.count {
+    for i in 1 ..< eachDayPriceArray.count {
         guard days.contains(i) else {
             eachDayPriceArray[i] = eachDayPriceArray[i - 1]
             continue
@@ -18,4 +18,4 @@ func mincostTickets(_ days: [Int], _ costs: [Int]) -> Int {
     return eachDayPriceArray.last!
 }
 
-print(mincostTickets([1,4,6,7,8,20], [2,7,15]))
+print(mincostTickets([1, 4, 6, 7, 8, 20], [2, 7, 15]))

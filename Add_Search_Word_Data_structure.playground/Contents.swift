@@ -1,18 +1,16 @@
 import UIKit
 
 class WordDictionary {
-
     class WordNode {
         var nextNode: [String: WordNode] = [:]
         var character = ""
-        var isEndChar =  false
+        var isEndChar = false
     }
+
     var wordNode = WordNode()
 
     /** Initialize your data structure here. */
-    init() {
-
-    }
+    init() {}
 
     /** Adds a word into the data structure. */
     func addWord(_ word: String) {
@@ -63,16 +61,16 @@ wordDictionary.addWord("adds")
 wordDictionary.addWord("adder")
 wordDictionary.addWord("addee")
 
-print(wordDictionary.search("r.n"))    // true
+print(wordDictionary.search("r.n")) // true
 print(wordDictionary.search("ru.n.e")) // false
-print(wordDictionary.search("add"))    // true
-print(wordDictionary.search("add."))   // true
-print(wordDictionary.search("adde."))  // true
-print(wordDictionary.search(".an."))   // false
-print(wordDictionary.search("...s"))   // true
+print(wordDictionary.search("add")) // true
+print(wordDictionary.search("add.")) // true
+print(wordDictionary.search("adde.")) // true
+print(wordDictionary.search(".an.")) // false
+print(wordDictionary.search("...s")) // true
 print(wordDictionary.search("....e.")) // true
-print(wordDictionary.search("......."))// false
-print(wordDictionary.search("..n.r"))  // false
+print(wordDictionary.search(".......")) // false
+print(wordDictionary.search("..n.r")) // false
 
 [true,
  false,

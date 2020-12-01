@@ -11,7 +11,7 @@ func getHint(_ secret: String, _ guess: String) -> String {
     }
     index = 0
     for char in guess {
-        if secret.contains(char) && char == hashmap[index] {
+        if secret.contains(char), char == hashmap[index] {
             bulls += 1
             if let idx = secret.firstIndex(of: char) {
                 secret.remove(at: idx)

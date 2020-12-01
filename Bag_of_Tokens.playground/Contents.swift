@@ -20,12 +20,11 @@ func bagOfTokensScore(_ tokens: [Int], _ P: Int) -> Int {
     return score
 }
 
-print(bagOfTokensScore([100,200,300,400], 200))
-print(bagOfTokensScore([100,200], 150))
+print(bagOfTokensScore([100, 200, 300, 400], 200))
+print(bagOfTokensScore([100, 200], 150))
 print(bagOfTokensScore([100], 50))
-print(bagOfTokensScore([100,300,200,400], 200))
-print(bagOfTokensScore([100,200,350,400], 200))
-print(bagOfTokensScore([100,200,200,400], 200))
-print(bagOfTokensScore([71,55,82],54))
-print(bagOfTokensScore([71,54,82],54))
-
+print(bagOfTokensScore([100, 300, 200, 400], 200))
+print(bagOfTokensScore([100, 200, 350, 400], 200))
+print(bagOfTokensScore([100, 200, 200, 400], 200))
+print(bagOfTokensScore([71, 55, 82], 54))
+print(bagOfTokensScore([71, 54, 82], 54))

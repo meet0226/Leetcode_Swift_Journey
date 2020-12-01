@@ -2,12 +2,12 @@ import UIKit
 
 func getRow(_ rowIndex: Int) -> [Int] {
     var hashMap = [Int: [Int]]()
-    for i in 0...rowIndex {
-        if let previousArray = hashMap[i-1] {
+    for i in 0 ... rowIndex {
+        if let previousArray = hashMap[i - 1] {
             hashMap[i] = [1]
-            for j in 0..<previousArray.count {
-                if j+1 < previousArray.count {
-                    let value = previousArray[j] + previousArray[j+1]
+            for j in 0 ..< previousArray.count {
+                if j + 1 < previousArray.count {
+                    let value = previousArray[j] + previousArray[j + 1]
                     hashMap[i]?.append(value)
                 }
             }

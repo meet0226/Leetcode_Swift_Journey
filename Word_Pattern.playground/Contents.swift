@@ -6,7 +6,7 @@ func wordPattern(_ pattern: String, _ str: String) -> Bool {
     guard patternArray.count == strArray.count else { return false }
     var strHashmap = [String: Character]()
     var patternHashmap = [Character: String]()
-    for i in 0..<patternArray.count {
+    for i in 0 ..< patternArray.count {
         if strHashmap[strArray[i]] != nil || patternHashmap[patternArray[i]] != nil {
             if patternArray[i] != strHashmap[strArray[i]] || strArray[i] != patternHashmap[patternArray[i]] {
                 return false

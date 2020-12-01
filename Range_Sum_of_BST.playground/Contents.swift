@@ -4,8 +4,8 @@ public class TreeNode {
     public var val: Int
     public var left: TreeNode?
     public var right: TreeNode?
-    public init() { self.val = 0; self.left = nil; self.right = nil; }
-    public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }
+    public init() { val = 0; left = nil; right = nil }
+    public init(_ val: Int) { self.val = val; left = nil; right = nil }
     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {
         self.val = val
         self.left = left
@@ -24,10 +24,11 @@ func createTreeNode(data: [Int?]) -> TreeNode? {
     }
     while index < data.count {
         var newNodeArray = [TreeNode]()
-        for i in 0..<nodeArray.count {
+        for i in 0 ..< nodeArray.count {
             let node = nodeArray[i]
             if index < data.count,
-               let value = data[index] {
+               let value = data[index]
+            {
                 let newNode = TreeNode(value)
                 node.left = newNode
                 newNodeArray.append(newNode)
@@ -52,7 +53,7 @@ func rangeSumBST(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
     while !nodeArray.isEmpty {
         var newNodeArray = [TreeNode]()
         for node in nodeArray {
-            result += (low...high).contains(node.val) ? node.val : 0
+            result += (low ... high).contains(node.val) ? node.val : 0
             if let leftNode = node.left, node.val >= low {
                 newNodeArray.append(leftNode)
             }
@@ -66,5 +67,5 @@ func rangeSumBST(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
     return result
 }
 
-let root1 = createTreeNode(data: [10,5,15,3,7,nil,18])
+let root1 = createTreeNode(data: [10, 5, 15, 3, 7, nil, 18])
 print(rangeSumBST(root1, 7, 15))

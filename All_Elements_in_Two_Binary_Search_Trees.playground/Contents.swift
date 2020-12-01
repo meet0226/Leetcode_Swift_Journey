@@ -3,8 +3,8 @@ class TreeNode {
     public var val: Int
     public var left: TreeNode?
     public var right: TreeNode?
-    public init() { self.val = 0; self.left = nil; self.right = nil; }
-    public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }
+    public init() { val = 0; left = nil; right = nil }
+    public init(_ val: Int) { self.val = val; left = nil; right = nil }
     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {
         self.val = val
         self.left = left
@@ -23,10 +23,11 @@ func createTreeNode(data: [Int?]) -> TreeNode? {
     }
     while index < data.count {
         var newNodeArray = [TreeNode]()
-        for i in 0..<nodeArray.count {
+        for i in 0 ..< nodeArray.count {
             let node = nodeArray[i]
             if index < data.count,
-                let value = data[index] {
+               let value = data[index]
+            {
                 let newNode = TreeNode(value)
                 node.left = newNode
                 newNodeArray.append(newNode)
@@ -57,10 +58,10 @@ func getAllElements(_ root1: TreeNode?, _ root2: TreeNode?) -> [Int] {
     var list2 = [Int]()
     addValuesInList(root: root1, values: &list1)
     addValuesInList(root: root2, values: &list2)
-    output = (list1 + list2).sorted  { $0 < $1 }
+    output = (list1 + list2).sorted { $0 < $1 }
     return output
 }
 
-let root1 = createTreeNode(data: [2,1,4])
-let root2 = createTreeNode(data: [5,1,7,0,2])
+let root1 = createTreeNode(data: [2, 1, 4])
+let root2 = createTreeNode(data: [5, 1, 7, 0, 2])
 print(getAllElements(root1, root2))

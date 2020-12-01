@@ -3,8 +3,8 @@ class TreeNode {
     public var val: Int
     public var left: TreeNode?
     public var right: TreeNode?
-    public init() { self.val = 0; self.left = nil; self.right = nil; }
-    public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }
+    public init() { val = 0; left = nil; right = nil }
+    public init(_ val: Int) { self.val = val; left = nil; right = nil }
     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {
         self.val = val
         self.left = left
@@ -23,10 +23,11 @@ func createTreeNode(data: [Int?]) -> TreeNode? {
     }
     while index < data.count {
         var newNodeArray = [TreeNode]()
-        for i in 0..<nodeArray.count {
+        for i in 0 ..< nodeArray.count {
             let node = nodeArray[i]
             if index < data.count,
-                let value = data[index] {
+               let value = data[index]
+            {
                 let newNode = TreeNode(value)
                 node.left = newNode
                 newNodeArray.append(newNode)
@@ -47,13 +48,13 @@ func createTreeNode(data: [Int?]) -> TreeNode? {
 func addValuesInList(root: TreeNode?, string: inout String, sum: inout Int) {
     guard let root = root else { return }
     string.append(String(root.val))
-    if root.left == nil && root.right == nil {
+    if root.left == nil, root.right == nil {
         sum += Int(string, radix: 2)!
         string.removeLast()
     }
     if root.left != nil {
         addValuesInList(root: root.left, string: &string, sum: &sum)
-        if string.count > 1 && root.right == nil { string.removeLast() }
+        if string.count > 1, root.right == nil { string.removeLast() }
     }
     if root.right != nil {
         addValuesInList(root: root.right, string: &string, sum: &sum)
@@ -68,7 +69,6 @@ func sumRootToLeaf(_ root: TreeNode?) -> Int {
     return sum
 }
 
-
-let input = [1,0,1,0,1,0,1]
+let input = [1, 0, 1, 0, 1, 0, 1]
 let treeNode = createTreeNode(data: input)
 print(sumRootToLeaf(treeNode))

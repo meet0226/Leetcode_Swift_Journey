@@ -17,7 +17,7 @@ func findMinArrowShots(_ points: [[Int]]) -> Int {
     return result
 }
 
-print(findMinArrowShots([[10,16],[2,8],[1,6],[7,12]]))
-print(findMinArrowShots([[1,2],[2,3],[3,4],[4,5]]))
-print(findMinArrowShots([[1,2]]))
-print(findMinArrowShots([[2,3],[2,3]]))
+print(findMinArrowShots([[10, 16], [2, 8], [1, 6], [7, 12]]))
+print(findMinArrowShots([[1, 2], [2, 3], [3, 4], [4, 5]]))
+print(findMinArrowShots([[1, 2]]))
+print(findMinArrowShots([[2, 3], [2, 3]]))

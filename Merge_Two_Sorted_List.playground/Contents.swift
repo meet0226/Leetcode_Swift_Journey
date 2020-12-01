@@ -3,9 +3,9 @@ import UIKit
 public class ListNode {
     public var val: Int
     public var next: ListNode?
-    public init() { self.val = 0; self.next = nil; }
-    public init(_ val: Int) { self.val = val; self.next = nil; }
-    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
+    public init() { val = 0; next = nil }
+    public init(_ val: Int) { self.val = val; next = nil }
+    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next }
 }
 
 func createList(data: [Int]) -> ListNode? {
@@ -42,6 +42,6 @@ func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     return mergedNode
 }
 
-let l1 = createList(data: [1,2,4])
-let l2 = createList(data: [1,3,4])
+let l1 = createList(data: [1, 2, 4])
+let l2 = createList(data: [1, 3, 4])
 getNodeValue(root: mergeTwoLists(l1, l2))

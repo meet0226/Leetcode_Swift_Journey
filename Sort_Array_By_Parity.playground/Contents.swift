@@ -12,4 +12,4 @@ func sortArrayByParity(_ A: [Int]) -> [Int] {
     return evenOutput + oddOutput
 }
 
-print(sortArrayByParity([3,1,2,4,5,6,7,8]))
+print(sortArrayByParity([3, 1, 2, 4, 5, 6, 7, 8]))

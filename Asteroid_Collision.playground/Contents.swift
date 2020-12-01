@@ -4,7 +4,7 @@ func asteroidCollision(_ asteroids: [Int]) -> [Int] {
     var asteroids = asteroids
     var index = asteroids.count - 1
     while index > 0 {
-        guard asteroids[index] < 0 , asteroids[index - 1] > 0 else {
+        guard asteroids[index] < 0, asteroids[index - 1] > 0 else {
             index -= 1
             continue
         }
@@ -23,11 +23,11 @@ func asteroidCollision(_ asteroids: [Int]) -> [Int] {
     return asteroids
 }
 
-print(asteroidCollision([5,10,-5]))
-print(asteroidCollision([5,8,-8,10,-5]))
-print(asteroidCollision([5,6,-2,8,-8,10,-5]))
-print(asteroidCollision([8,-8]))
-print(asteroidCollision([10,2,-5]))
-print(asteroidCollision([-2,-1,1,2]))
-print(asteroidCollision([-2,2,-1,-2]))
-print(asteroidCollision([1,1,-1,-2]))
+print(asteroidCollision([5, 10, -5]))
+print(asteroidCollision([5, 8, -8, 10, -5]))
+print(asteroidCollision([5, 6, -2, 8, -8, 10, -5]))
+print(asteroidCollision([8, -8]))
+print(asteroidCollision([10, 2, -5]))
+print(asteroidCollision([-2, -1, 1, 2]))
+print(asteroidCollision([-2, 2, -1, -2]))
+print(asteroidCollision([1, 1, -1, -2]))

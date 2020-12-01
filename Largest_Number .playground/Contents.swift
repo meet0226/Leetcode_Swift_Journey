@@ -5,6 +5,6 @@ func largestNumber(_ nums: [Int]) -> String {
     return Int(strings.joined()) == 0 ? "0" : strings.joined()
 }
 
-print(largestNumber([3,30,34,5,9]))
-print(largestNumber([3,30,34,5,90,9]))
-print(largestNumber([0,0]))
+print(largestNumber([3, 30, 34, 5, 9]))
+print(largestNumber([3, 30, 34, 5, 90, 9]))
+print(largestNumber([0, 0]))

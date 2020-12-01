@@ -3,8 +3,8 @@ public class TreeNode {
     public var val: Int
     public var left: TreeNode?
     public var right: TreeNode?
-    public init() { self.val = 0; self.left = nil; self.right = nil; }
-    public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }
+    public init() { val = 0; left = nil; right = nil }
+    public init(_ val: Int) { self.val = val; left = nil; right = nil }
     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {
         self.val = val
         self.left = left
@@ -23,10 +23,11 @@ func createTreeNode(data: [Int?]) -> TreeNode? {
     }
     while index < data.count {
         var newNodeArray = [TreeNode]()
-        for i in 0..<nodeArray.count {
+        for i in 0 ..< nodeArray.count {
             let node = nodeArray[i]
             if index < data.count,
-                let value = data[index] {
+               let value = data[index]
+            {
                 let newNode = TreeNode(value)
                 node.left = newNode
                 newNodeArray.append(newNode)
@@ -50,10 +51,10 @@ func sumOfLeftLeaves(_ root: TreeNode?) -> Int {
     var nodeArray: [TreeNode] = [root]
     while nodeArray.count > 0 {
         var newNodeArray = [TreeNode]()
-        for i in 0..<nodeArray.count {
+        for i in 0 ..< nodeArray.count {
             let node = nodeArray[i]
             if let leftNode = node.left {
-                if leftNode.left == nil && leftNode.right == nil {
+                if leftNode.left == nil, leftNode.right == nil {
                     output += leftNode.val
                 } else {
                     newNodeArray.append(leftNode)
@@ -68,10 +69,10 @@ func sumOfLeftLeaves(_ root: TreeNode?) -> Int {
     return output
 }
 
-let input = [3,9,20,nil,nil,15,7]
+let input = [3, 9, 20, nil, nil, 15, 7]
 let treeNode = createTreeNode(data: input)
 print(sumOfLeftLeaves(treeNode)) // 24
 
-let input1 = [0,5,1,9,nil,2,nil,nil,nil,nil,3,4,8,6,nil,nil,nil,7]
+let input1 = [0, 5, 1, 9, nil, 2, nil, nil, nil, nil, 3, 4, 8, 6, nil, nil, nil, 7]
 let treeNode1 = createTreeNode(data: input1)
 print(sumOfLeftLeaves(treeNode1)) // 16

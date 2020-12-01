@@ -23,8 +23,8 @@ func minDominoRotations(_ A: [Int], _ B: [Int]) -> Int {
     var resultA = 0
     for dict in (hashMapA.sorted { $0.1 > $1.1 }) {
         var index = 0
-        for i in 0..<A.count {
-            if A[i] != dict.key && B[i] != dict.key {
+        for i in 0 ..< A.count {
+            if A[i] != dict.key, B[i] != dict.key {
                 break
             }
             index += 1
@@ -37,8 +37,8 @@ func minDominoRotations(_ A: [Int], _ B: [Int]) -> Int {
     var resultB = 0
     for dict in (hashMapB.sorted { $0.1 > $1.1 }) {
         var index = 0
-        for i in 0..<B.count {
-            if B[i] != dict.key && A[i] != dict.key {
+        for i in 0 ..< B.count {
+            if B[i] != dict.key, A[i] != dict.key {
                 break
             }
             index += 1
@@ -48,10 +48,10 @@ func minDominoRotations(_ A: [Int], _ B: [Int]) -> Int {
         }
     }
 
-    return min(resultA,resultB) == 0 ? -1 : min(resultA,resultB)
+    return min(resultA, resultB) == 0 ? -1 : min(resultA, resultB)
 }
 
-print(minDominoRotations([2,1,2,4,2,2], [5,2,6,2,3,2]))
-print(minDominoRotations([3,5,1,2,3], [3,6,3,3,4]))
-print(minDominoRotations([1,1,1,1,1,1], [1,1,1,1,1,1]))
-print(minDominoRotations([1,1,1,1,1,1], [1,2,3,4,5]))
+print(minDominoRotations([2, 1, 2, 4, 2, 2], [5, 2, 6, 2, 3, 2]))
+print(minDominoRotations([3, 5, 1, 2, 3], [3, 6, 3, 3, 4]))
+print(minDominoRotations([1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]))
+print(minDominoRotations([1, 1, 1, 1, 1, 1], [1, 2, 3, 4, 5]))

@@ -6,8 +6,8 @@ func pancakeSort(_ A: [Int]) -> [Int] {
     var B = A
     while !isSorted {
         var indexOfLargestNumber = 0
-        for i in 0..<B.count {
-            if B[indexOfLargestNumber] < B[min(i+1, B.count - 1)] {
+        for i in 0 ..< B.count {
+            if B[indexOfLargestNumber] < B[min(i + 1, B.count - 1)] {
                 indexOfLargestNumber = i + 1
             }
         }
@@ -24,15 +24,15 @@ func pancakeSort(_ A: [Int]) -> [Int] {
 }
 
 func isSortedArray(_ array: [Int]) -> Bool {
-    for i in 0..<array.count-1 {
-        if array[i] > array[i+1] {
+    for i in 0 ..< array.count - 1 {
+        if array[i] > array[i + 1] {
             return false
         }
     }
     return true
 }
 
-func swapData(_ array: [Int],_ lastIndex: Int) -> [Int] {
+func swapData(_ array: [Int], _ lastIndex: Int) -> [Int] {
     var array = array
     var i = 0
     var j = lastIndex

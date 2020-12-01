@@ -3,9 +3,9 @@ import UIKit
 public class ListNode {
     public var val: Int
     public var next: ListNode?
-    public init() { self.val = 0; self.next = nil; }
-    public init(_ val: Int) { self.val = val; self.next = nil; }
-    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
+    public init() { val = 0; next = nil }
+    public init(_ val: Int) { self.val = val; next = nil }
+    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next }
 }
 
 func createList(data: [Int]) -> ListNode? {
@@ -45,7 +45,7 @@ func createBinaryString(head: ListNode?, binaryString: inout String) {
     }
 }
 
-let rootNode = createList(data: [1,0,0,1,0,0,1,1,1,0,0,0,0,0,0])
+let rootNode = createList(data: [1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0])
 print(getDecimalValue(rootNode))
 
 let rootNode1 = createList(data: [1])
@@ -54,8 +54,8 @@ print(getDecimalValue(rootNode1))
 let rootNode2 = createList(data: [0])
 print(getDecimalValue(rootNode2))
 
-let rootNode3 = createList(data: [0,0])
+let rootNode3 = createList(data: [0, 0])
 print(getDecimalValue(rootNode3))
 
-let rootNode4 = createList(data: [1,0,1])
+let rootNode4 = createList(data: [1, 0, 1])
 print(getDecimalValue(rootNode4))

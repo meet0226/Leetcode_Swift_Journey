@@ -4,14 +4,14 @@ func partitionLabels(_ S: String) -> [Int] {
     var output = [Int]()
     let characters = Array(S)
     var hashmap = [Character: Int]()
-    for i in 0..<characters.count {
+    for i in 0 ..< characters.count {
         hashmap[characters[i]] = i
     }
     print(hashmap)
     var index = 0
     while index < characters.count {
         let endCharacter = characters[index]
-        for i in 0...hashmap[endCharacter]! {
+        for i in 0 ... hashmap[endCharacter]! {
             if hashmap[endCharacter]! < hashmap[characters[i]]! {
                 index = i
                 break

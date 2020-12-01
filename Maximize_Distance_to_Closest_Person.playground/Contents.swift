@@ -5,7 +5,7 @@ func maxDistToClosest(_ seats: [Int]) -> Int {
     var maxDistance = 0
     var index = 0
     while index < seats.count {
-        guard (currentPosition != -1 || seats[index] != 1) else {
+        guard currentPosition != -1 || seats[index] != 1 else {
             index += 1
             continue
         }
@@ -14,7 +14,7 @@ func maxDistToClosest(_ seats: [Int]) -> Int {
         } else {
             if seats[index] == 1, currentPosition > 0 {
                 let min = currentPosition - 1
-                maxDistance = (index - min) == 1 ? max(maxDistance, 1) : max(maxDistance, (index - min)/2)
+                maxDistance = (index - min) == 1 ? max(maxDistance, 1) : max(maxDistance, (index - min) / 2)
                 currentPosition = index + 1
             } else if seats[index] == 1, currentPosition == 0 {
                 maxDistance = index - currentPosition
@@ -29,12 +29,12 @@ func maxDistToClosest(_ seats: [Int]) -> Int {
     return maxDistance
 }
 
-print(maxDistToClosest([1,0,0,0,1,0,1]))
-print(maxDistToClosest([1,0,0,0]))
-print(maxDistToClosest([0,1]))
-print(maxDistToClosest([0,0,0,0,0,1]))
-print(maxDistToClosest([0,0,1,0,0,0,0,1,0,0]))
-print(maxDistToClosest([0,0,1,0,0,0,0,0,1,0,0]))
-print(maxDistToClosest([0,0,1,0,0,0,0,0,1,0,0,0]))
-print(maxDistToClosest([0,0,1,0,0,0,0,0,1,0,0,0,0]))
-print(maxDistToClosest([0,0,1,0,1,1]))
+print(maxDistToClosest([1, 0, 0, 0, 1, 0, 1]))
+print(maxDistToClosest([1, 0, 0, 0]))
+print(maxDistToClosest([0, 1]))
+print(maxDistToClosest([0, 0, 0, 0, 0, 1]))
+print(maxDistToClosest([0, 0, 1, 0, 0, 0, 0, 1, 0, 0]))
+print(maxDistToClosest([0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0]))
+print(maxDistToClosest([0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0]))
+print(maxDistToClosest([0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]))
+print(maxDistToClosest([0, 0, 1, 0, 1, 1]))

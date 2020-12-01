@@ -4,8 +4,8 @@ class TreeNode {
     public var val: Int
     public var left: TreeNode?
     public var right: TreeNode?
-    public init() { self.val = 0; self.left = nil; self.right = nil; }
-    public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }
+    public init() { val = 0; left = nil; right = nil }
+    public init(_ val: Int) { self.val = val; left = nil; right = nil }
     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {
         self.val = val
         self.left = left
@@ -24,10 +24,11 @@ func createTreeNode(data: [Int?]) -> TreeNode? {
     }
     while index < data.count {
         var newNodeArray = [TreeNode]()
-        for i in 0..<nodeArray.count {
+        for i in 0 ..< nodeArray.count {
             let node = nodeArray[i]
             if index < data.count,
-               let value = data[index] {
+               let value = data[index]
+            {
                 let newNode = TreeNode(value)
                 node.left = newNode
                 newNodeArray.append(newNode)
@@ -63,12 +64,12 @@ func getData(root: TreeNode?) {
     }
 }
 
-let input = [4,2,7,1,3]
+let input = [4, 2, 7, 1, 3]
 let treeNode = createTreeNode(data: input)
 let newTreeNode = insertIntoBST(treeNode, 5)
 getData(root: newTreeNode)
 
-let input1 = [40,20,60,10,30,50,70]
+let input1 = [40, 20, 60, 10, 30, 50, 70]
 let treeNode1 = createTreeNode(data: input1)
 let newTreeNode1 = insertIntoBST(treeNode1, 25)
 getData(root: newTreeNode1)

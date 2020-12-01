@@ -6,7 +6,7 @@ func lengthOfLongestSubstring(_ s: String) -> Int {
     var currentSubstring: [Character] = []
     for char in s {
         if let index = currentSubstring.firstIndex(of: char) {
-            currentSubstring.removeFirst(index+1)
+            currentSubstring.removeFirst(index + 1)
         }
         currentSubstring.append(char)
         highestCount = max(highestCount, currentSubstring.count)

@@ -1,7 +1,7 @@
 import Foundation
 
 func repeatedSubstringPattern(_ s: String) -> Bool {
-    guard s.count > 1, (s.count % (s.count/2)) == 0 else { return false }
+    guard s.count > 1, (s.count % (s.count / 2)) == 0 else { return false }
     var ss = s + s
     ss.removeLast()
     ss.removeFirst()
@@ -19,4 +19,3 @@ print(repeatedSubstringPattern("aaaaa"))
 print(repeatedSubstringPattern("ababba"))
 print(repeatedSubstringPattern("abac"))
 print(repeatedSubstringPattern("abacababacab"))
-

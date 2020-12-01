@@ -21,5 +21,5 @@ func findTheDifference1(_ s: String, _ t: String) -> Character {
     return Character(UnicodeScalar(res)!)
 }
 
-print(findTheDifference("abcd","abcde"))
-print(findTheDifference1("abcd","abcda"))
+print(findTheDifference("abcd", "abcde"))
+print(findTheDifference1("abcd", "abcda"))

@@ -4,8 +4,8 @@ public class TreeNode {
     public var val: Int
     public var left: TreeNode?
     public var right: TreeNode?
-    public init() { self.val = 0; self.left = nil; self.right = nil; }
-    public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }
+    public init() { val = 0; left = nil; right = nil }
+    public init(_ val: Int) { self.val = val; left = nil; right = nil }
     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {
         self.val = val
         self.left = left
@@ -32,10 +32,11 @@ func createTreeNode(data: [Int?]) -> TreeNode? {
     }
     while index < data.count {
         var newNodeArray = [TreeNode]()
-        for i in 0..<nodeArray.count {
+        for i in 0 ..< nodeArray.count {
             let node = nodeArray[i]
             if index < data.count,
-                let value = data[index] {
+               let value = data[index]
+            {
                 let newNode = TreeNode(value)
                 node.left = newNode
                 newNodeArray.append(newNode)
@@ -60,7 +61,7 @@ func minDepth(_ root: TreeNode?) -> Int {
     while !nodeArray.isEmpty {
         var tempNode = [TreeNode?]()
         for node in nodeArray {
-            if node?.left == nil && node?.right == nil { return output }
+            if node?.left == nil, node?.right == nil { return output }
 
             if let leftNode = node?.left {
                 tempNode.append(leftNode)
@@ -75,14 +76,14 @@ func minDepth(_ root: TreeNode?) -> Int {
     return 0
 }
 
-let treeNode = createTreeNode(data: [3,9,20,nil,nil,15,7])
+let treeNode = createTreeNode(data: [3, 9, 20, nil, nil, 15, 7])
 getData(root: treeNode)
 print(minDepth(treeNode))
 
-let treeNode1 = createTreeNode(data: [2,nil,3,nil,4,nil,5,nil,6])
+let treeNode1 = createTreeNode(data: [2, nil, 3, nil, 4, nil, 5, nil, 6])
 getData(root: treeNode1)
 print(minDepth(treeNode1))
 
-let treeNode2 = createTreeNode(data: [1,2,3,4,5])
+let treeNode2 = createTreeNode(data: [1, 2, 3, 4, 5])
 getData(root: treeNode2)
 print(minDepth(treeNode2))

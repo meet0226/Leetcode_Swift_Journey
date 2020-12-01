@@ -3,9 +3,9 @@ import UIKit
 public class ListNode {
     public var val: Int
     public var next: ListNode?
-    public init() { self.val = 0; self.next = nil; }
-    public init(_ val: Int) { self.val = val; self.next = nil; }
-    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
+    public init() { val = 0; next = nil }
+    public init(_ val: Int) { self.val = val; next = nil }
+    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next }
 }
 
 func createList(data: [Int]) -> ListNode? {
@@ -41,14 +41,14 @@ func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
 
     var currentFirstNode: ListNode? = l1.next
     var currentSecondNode: ListNode? = l2.next
-    if currentFirstNode == nil && currentSecondNode == nil {
+    if currentFirstNode == nil, currentSecondNode == nil {
         if carry > 0 {
             l3.next = ListNode(carry)
         }
         return l3
     }
     var currentNewNode: ListNode? = l3
-    while (currentFirstNode != nil || currentSecondNode != nil) {
+    while currentFirstNode != nil || currentSecondNode != nil {
         let addition = calculateAdditionAndCarry(currentFirstNode?.val ?? 0, currentSecondNode?.val ?? 0, carry: &carry)
         currentFirstNode = currentFirstNode?.next
         currentSecondNode = currentSecondNode?.next
@@ -61,23 +61,23 @@ func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     return l3
 }
 
-func calculateAdditionAndCarry(_ firstValue: Int, _ secondValue: Int, carry: inout  Int) -> Int {
+func calculateAdditionAndCarry(_ firstValue: Int, _ secondValue: Int, carry: inout Int) -> Int {
     let addition = firstValue + secondValue + carry
-    carry = addition/10
-    return (addition%10)
+    carry = addition / 10
+    return (addition % 10)
 }
 
-let l1 = createList(data: [2,4,3])
-let l2 = createList(data: [5,6,4])
+let l1 = createList(data: [2, 4, 3])
+let l2 = createList(data: [5, 6, 4])
 
 getNodeValue(root: addTwoNumbers(l1, l2))
 
-let l11 = createList(data: [9,1])
-let l21 = createList(data: [9,1])
+let l11 = createList(data: [9, 1])
+let l21 = createList(data: [9, 1])
 
 getNodeValue(root: addTwoNumbers(l11, l21))
 
-let l12 = createList(data: [9,9,9,9,9,9,9])
-let l22 = createList(data: [9,9,9,9])
+let l12 = createList(data: [9, 9, 9, 9, 9, 9, 9])
+let l22 = createList(data: [9, 9, 9, 9])
 
 getNodeValue(root: addTwoNumbers(l12, l22))

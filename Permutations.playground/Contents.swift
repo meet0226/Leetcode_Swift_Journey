@@ -8,17 +8,16 @@ func permute(_ nums: [Int]) -> [[Int]] {
     return output
 }
 
-func findPermutations(_ output: inout [[Int]],_ nums: inout [Int], _ start: Int, _ end: Int) {
+func findPermutations(_ output: inout [[Int]], _ nums: inout [Int], _ start: Int, _ end: Int) {
     if start == end {
         output.append(nums)
     } else {
-        for i in start...end {
+        for i in start ... end {
             nums.swapAt(start, i)
-            findPermutations(&output, &nums, start+1, end)
+            findPermutations(&output, &nums, start + 1, end)
             nums.swapAt(start, i)
         }
     }
 }
 
-print(permute([1,2,3]))
-
+print(permute([1, 2, 3]))

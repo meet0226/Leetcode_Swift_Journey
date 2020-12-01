@@ -4,8 +4,8 @@ public class TreeNode {
     public var val: Int
     public var left: TreeNode?
     public var right: TreeNode?
-    public init() { self.val = 0; self.left = nil; self.right = nil; }
-    public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }
+    public init() { val = 0; left = nil; right = nil }
+    public init(_ val: Int) { self.val = val; left = nil; right = nil }
     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {
         self.val = val
         self.left = left
@@ -24,10 +24,11 @@ func createTreeNode(data: [Int?]) -> TreeNode? {
     }
     while index < data.count {
         var newNodeArray = [TreeNode]()
-        for i in 0..<nodeArray.count {
+        for i in 0 ..< nodeArray.count {
             let node = nodeArray[i]
             if index < data.count,
-               let value = data[index] {
+               let value = data[index]
+            {
                 let newNode = TreeNode(value)
                 node.left = newNode
                 newNodeArray.append(newNode)
@@ -48,12 +49,11 @@ func createTreeNode(data: [Int?]) -> TreeNode? {
 func getData(root: TreeNode?) {
     if root != nil {
         getData(root: root?.left)
-        //print(root?.val)
+        // print(root?.val)
         getData(root: root?.right)
         print(root?.val)
     }
 }
-
 
 func findTilt(_ root: TreeNode?) -> Int {
     guard let root = root else { return 0 }
@@ -70,10 +70,10 @@ func calculateTilt(root: TreeNode?, tilt: inout Int) -> Int {
     return leftTilt + rightTilt + root.val
 }
 
-let root = createTreeNode(data: [4,2,9,3,5,nil,7])
-//getData(root: root)
+let root = createTreeNode(data: [4, 2, 9, 3, 5, nil, 7])
+// getData(root: root)
 print(findTilt(root))
 
-let root1 = createTreeNode(data: [21,7,14,1,1,2,2,3,3])
+let root1 = createTreeNode(data: [21, 7, 14, 1, 1, 2, 2, 3, 3])
 ////getData(root: root1)
 print(findTilt(root1))

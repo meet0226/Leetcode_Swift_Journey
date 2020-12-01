@@ -19,4 +19,3 @@ print(titleToNumber(str2)) // 28
 
 var str3 = "ZY"
 print(titleToNumber(str3)) // 701
-

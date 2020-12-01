@@ -5,6 +5,7 @@ class CombinationIterator {
         var value: String?
         var nextCombination: Combination?
     }
+
     private var rootCombination: Combination?
     private var activeCombination: Combination?
     private var currentCombination: Combination?
@@ -23,7 +24,7 @@ class CombinationIterator {
     }
 
     private func createCombinations(characters: [Character], combinationLength: Int, index: Int, current: String) {
-        if current.count == combinationLength  {
+        if current.count == combinationLength {
             let combination = Combination()
             combination.value = current
             if rootCombination != nil {
@@ -35,11 +36,11 @@ class CombinationIterator {
             }
             return
         }
-        for i in index..<characters.count{
+        for i in index ..< characters.count {
             if current.count < combinationLength {
                 createCombinations(characters: characters,
                                    combinationLength: combinationLength,
-                                   index: i+1,
+                                   index: i + 1,
                                    current: current + String(characters[i]))
             }
         }
@@ -56,7 +57,7 @@ class CombinationIterator {
     }
 }
 
-let iterator = CombinationIterator("abcd",2)
+let iterator = CombinationIterator("abcd", 2)
 iterator.next()
 iterator.hasNext()
 iterator.next()
