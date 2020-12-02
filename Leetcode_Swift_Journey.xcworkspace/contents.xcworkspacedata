@@ -5,6 +5,9 @@
       location = "container:"
       name = "Easy">
       <FileRef
+         location = "group:Maximum_Depth_of_Binary_Tree.playground">
+      </FileRef>
+      <FileRef
          location = "group:/Users/amitkumar693/Desktop/My Desktop/Leetcode/Unique_Morse_Code_Words.playground">
       </FileRef>
       <FileRef
