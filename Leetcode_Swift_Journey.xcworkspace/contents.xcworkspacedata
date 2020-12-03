@@ -5,6 +5,9 @@
       location = "container:"
       name = "Easy">
       <FileRef
+         location = "group:Increasing_Order_Search_Tree.playground">
+      </FileRef>
+      <FileRef
          location = "group:Maximum_Depth_of_Binary_Tree.playground">
       </FileRef>
       <FileRef
