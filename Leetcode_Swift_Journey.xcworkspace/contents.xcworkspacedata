@@ -135,6 +135,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Pairs of Songs_With_Total_Durations_Divisible_by_60.playground">
+      </FileRef>
+      <FileRef
          location = "group:Spiral_Matrix_II.playground">
       </FileRef>
       <FileRef
