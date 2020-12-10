@@ -5,6 +5,9 @@
       location = "container:"
       name = "Easy">
       <FileRef
+         location = "group:Valid_Mountain_Array .playground">
+      </FileRef>
+      <FileRef
          location = "group:Increasing_Order_Search_Tree.playground">
       </FileRef>
       <FileRef
