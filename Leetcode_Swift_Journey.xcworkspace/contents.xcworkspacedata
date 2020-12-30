@@ -138,6 +138,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Reach_A_Number.playground">
+      </FileRef>
+      <FileRef
          location = "group:Binary_Search_Tree_Iterator.playground">
       </FileRef>
       <FileRef
