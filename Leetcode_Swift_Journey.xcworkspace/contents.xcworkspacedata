@@ -138,6 +138,9 @@
       location = "container:"
       name = "Medium">
       <FileRef
+         location = "group:Valid_Parentheses.playground">
+      </FileRef>
+      <FileRef
          location = "group:Reach_A_Number.playground">
       </FileRef>
       <FileRef
